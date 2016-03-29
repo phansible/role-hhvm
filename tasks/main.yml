@@ -56,7 +56,7 @@
   when: apache is defined and apache.install == '1' and apache_version.stdout.find('Apache/2.2.') != -1
 
 - name: Change default apache2.2 site
-  sudo: yes
+  become: yes
   template: src=vhost22.conf.tpl dest=/etc/apache2/sites-available/default
   notify: restart apache
   when: apache is defined and apache.install == '1' and apache_version.stdout.find('Apache/2.2.') != -1
