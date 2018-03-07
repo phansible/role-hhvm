@@ -9,7 +9,7 @@
   when: ansible_distribution == 'Ubuntu'
 
 - name: Add APT Repo (Ubuntu)
-  apt_repository: repo='deb [arch=amd64] http://dl.hhvm.com/ubuntu {{ ansible_distribution_release }} main'
+  apt_repository: repo='deb [arch=amd64] https://dl.hhvm.com/ubuntu {{ ansible_distribution_release }} main'
                   state=present
                   update_cache=yes
   when: ansible_distribution == 'Ubuntu'
