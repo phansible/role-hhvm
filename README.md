@@ -1,6 +1,6 @@
 # Phansible Role: HHVM
 
-[![Build Status](https://travis-ci.org/phansible/role-hhvm.svg?branch=master)](https://travis-ci.org/phansible/role-hhvm)
+[![CI](https://github.com/phansible/role-hhvm/actions/workflows/ci.yml/badge.svg)](https://github.com/phansible/role-hhvm/actions/workflows/ci.yml)
 
 An Ansible Role that installs [HHVM](http://hhvm.com/) on Ubuntu specifically created with [Phansible](http://phansible.com/) in mind.
 
